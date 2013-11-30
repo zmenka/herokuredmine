@@ -80,16 +80,16 @@
 
 # default configuration options for all environments
 default:
-  # Outgoing emails configuration (see examples above)
-  email_delivery:
-    delivery_method: :smtp
-    smtp_settings:
-      address: smtp.example.net
-      port: 25
-      domain: example.net
-      authentication: :login
-      user_name: "redmine@example.net"
-      password: "redmine"
+#  # Outgoing emails configuration (see examples above)
+#  email_delivery:
+#    delivery_method: :smtp
+#    smtp_settings:
+#      address: smtp.example.net
+#      port: 25
+#      domain: example.net
+#      authentication: :login
+#      user_name: "redmine@example.net"
+#      password: "redmine"
 
   # Absolute path to the directory where attachments are stored.
   # The default is the 'files' directory in your Redmine instance.
@@ -205,16 +205,16 @@ default:
 # specific configuration options for production environment
 # that overrides the default ones
 production:
-    email_delivery:
-	delivery_method: :smtp
-	smtp_settings:
-	    address: smtp.gmail.com
-	    port: 465
-	    domain: smtp.gmail.com
-	    authentication: :login
-	    enable_starttls_auto: false
-	    user_name: "herokuredmine@gmail.com"
-	    password: "herokumail"
+  email_delivery:
+    delivery_method: :smtp
+      smtp_settings:
+        address: smtp.gmail.com
+          port: 465
+          domain: smtp.gmail.com
+          authentication: :login
+          enable_starttls_auto: false
+          user_name: "herokuredmine@gmail.com"
+          password: "herokumail"
 
 # specific configuration options for development environment
 # that overrides the default ones
