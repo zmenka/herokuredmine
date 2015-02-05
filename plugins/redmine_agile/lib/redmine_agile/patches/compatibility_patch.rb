@@ -68,6 +68,14 @@ class AgileQuery < Query
   def is_public?
     !is_private?
   end
+  
+  def is_public
+    is_public?
+  end
+  
+  def is_private
+    is_private?
+  end
 
   def self.default_query(project=nil)
     false
