@@ -12,3 +12,13 @@ require File.expand_path('../application', __FILE__)
 
 # Initialize the rails application
 RedmineApp::Application.initialize!
+
+require “smtp_tls”
+
+ActionMailer::Base.smtp_settings = {
+:address => “smtp.gmail.com”,
+:port => 587,
+:authentication => :plain,
+:user_name => “herokuredmine@gmail.com”,
+:password => ’herokuc0mmail’
+} 
